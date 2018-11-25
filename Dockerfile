@@ -8,6 +8,7 @@ COPY Gemfile.lock /usr/src/app
 WORKDIR /usr/src/app
 RUN bundle install
 CMD ["rails", "s", "-b", "0.0.0.0"]
+EXPOSE 3000
 
 
 # Set an environment variable where the Rails app is installed to inside of Docker image
